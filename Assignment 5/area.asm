@@ -83,7 +83,7 @@ begin_loop:
     cmp r14, r13        ;checks if the counter has reached the limit of the array
     jge print_array
 
-    inc r15 
+    inc r15             ;increment the counter r15, for sidePrompt
     mov rax, 0
     mov rdi, sidePrompt
     mov rsi, r15
